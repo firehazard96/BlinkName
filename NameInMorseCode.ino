@@ -43,7 +43,7 @@ void letter(const std::vector<bool>& symbols)
         else dash();
     }
     
-    delay(5 * UNIT);
+    delay(2 * UNIT); // already delayed one unit after the last dot/dash
 }
 
 void word(const std::string wrd)
@@ -55,7 +55,7 @@ void word(const std::string wrd)
         if (letters.find(ch) != letters.end()) letter(letters.at(ch));
     }
     
-    delay(7 * UNIT);
+    delay(4 * UNIT); // already delayed three units after the last letter
 }
 
 void loop()
